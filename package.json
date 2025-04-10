@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "docker",
   "private": true,
   "scripts": {
     "build": "turbo run build",
