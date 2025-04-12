@@ -4,7 +4,7 @@ import { prismaclient } from "db/clients"
 const app = express()
 app.use(express.json())
 
-app.get("/userr",(req,res)=>{
+app.get("/user",(req,res)=>{
     console.log("bc");
     
     prismaclient.user.findMany()

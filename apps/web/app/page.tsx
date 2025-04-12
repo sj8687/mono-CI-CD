@@ -1,12 +1,15 @@
 
-
 export default async function Home() {
   const res = await fetch("http://localhost:8080/user");
-  const users = await res.json();
+  if (!res.ok) {
+    throw new Error(`API error: ${res.status}`);
+  }
+  
+  const data = await res.json();
 
   return (
     <div>
-      {JSON.stringify(users)}
+      {JSON.stringify(data)}
     </div>
   );
 }
