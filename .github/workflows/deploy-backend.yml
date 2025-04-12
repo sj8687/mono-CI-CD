@@ -22,6 +22,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: ./apps/dockerr/Dockerfile.backend
+          file: ./dockerr/Dockerfile.backend
           push: true
           tags: shreyash8687/todo-pro-backend:${{ github.sha }}
