@@ -28,7 +28,6 @@
       "version": "0.1.0",
       "dependencies": {
         "@repo/ui": "*",
-        "db": "*",
         "next": "^15.3.0",
         "react": "^19.1.0",
         "react-dom": "^19.1.0",
