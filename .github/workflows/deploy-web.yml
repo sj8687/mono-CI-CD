@@ -23,7 +23,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: ./docker/Dockerfile.web
+          file: ./apps/dockerr/Dockerfile.web
           build-args:
             - DATABASE_URL=${{ secrets.DATABASE_URL }}
           push: true
